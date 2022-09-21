@@ -2,7 +2,7 @@
 
 <p>Aplicativo desenvolvido para um trabalho interdisciplinar de Programação Web 3, Programação de Aplicativos Mobile 2 e Biologia.</p>
 
-## 👨‍💻 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 <div align="left">
  <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
