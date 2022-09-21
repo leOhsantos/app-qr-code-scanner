@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { Entypo, MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
@@ -10,11 +10,28 @@ export function Menu() {
 
   return (
     <View style={styles.container}>
-      <Entypo onPress={() => navigation.navigate('home')} name="home" size={41} color="#ffffff" />
-      <View style={styles.containerQrcodeIcon}>
-        <MaterialCommunityIcons onPress={() => navigation.navigate('qrcode')} name="qrcode-scan" size={46} color="#25874b" />
-      </View>
-      <Ionicons onPress={() => navigation.navigate('developer')} name="person-circle" size={43} color="#ffffff" />
+      <TouchableOpacity
+        activeOpacity={0.7}
+        onPress={() => navigation.navigate('home')}
+      >
+        <Entypo name="home" size={41} color="#ffffff" />
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        activeOpacity={0.7}
+        onPress={() => navigation.navigate('qrcode')}
+      >
+        <View style={styles.containerQrcodeIcon}>
+          <MaterialCommunityIcons name="qrcode-scan" size={46} color="#25874b" />
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        activeOpacity={0.7}
+        onPress={() => navigation.navigate('developer')}
+      >
+        <Ionicons name="person-circle" size={43} color="#ffffff" />
+      </TouchableOpacity>
     </View>
   );
 }

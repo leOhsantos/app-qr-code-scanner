@@ -21,7 +21,7 @@ export function Home() {
           style={styles.mouseImg}
         />
 
-        <Text style={styles.text}>Caso você queira conhecer melhor essa doença, acesse o scan de QR Code a partir desse aplicativo e mire para o cartaz que possui o QR Code sobre a Leptospirose.</Text>
+        <Text style={styles.text}>Caso você queira conhecer melhor essa doença, acesse o scanner e escaneie o QR Code do cartaz referente a Leptospirose.</Text>
       </View>
 
       <Menu />

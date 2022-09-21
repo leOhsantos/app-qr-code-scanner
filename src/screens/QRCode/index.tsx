@@ -1,7 +1,9 @@
+import { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import MaskedView from '@react-native-masked-view/masked-view';
+import { Camera } from 'expo-camera';
 import { A } from '@expo/html-elements';
 import { Entypo } from '@expo/vector-icons';
-import { useEffect, useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
@@ -35,11 +37,19 @@ export function QRCode() {
 
       <View></View>
 
-      <View>
-        <BarCodeScanner
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-          style={styles.qrcode}
-        />
+      <View style={styles.qrcodeContent}>
+        <Text style={styles.titleQrcode}>QR Code Scanner</Text>
+
+        <MaskedView
+          maskElement={
+            <View style={styles.qrcodeMask}></View>
+          }
+        >
+          <Camera
+            onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+            style={styles.camera}
+          />
+        </MaskedView>
 
         <A href={text} style={styles.linkQrcode}>{text ? <Text><Entypo name="link" size={20} color="#ffffff" /> Acessar link</Text> : ''}</A>
 

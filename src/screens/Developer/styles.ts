@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     height: 250,
     borderRadius: 200,
     borderColor: '#25874b',
-    borderWidth: 4
+    borderWidth: 5
   },
   title: {
     fontSize: 32,

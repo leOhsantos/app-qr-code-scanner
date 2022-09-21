@@ -7,9 +7,28 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#67C38D'
   },
-  qrcode: {
-    width: 500,
-    height: 400,
+  qrcodeContent: {
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  titleQrcode: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#ffffff',
+    marginBottom: 20,
+    letterSpacing: 1
+  },
+  qrcodeMask: {
+    backgroundColor: '#000',
+    width: 320,
+    height: 320,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  camera: {
+    height: 320,
+    width: 320,
   },
   scanBtn: {
     justifyContent: 'center',
