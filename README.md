@@ -2,8 +2,6 @@
 
 <p>Aplicativo desenvolvido para um trabalho interdisciplinar de Programação Web 3, Programação de Aplicativos Mobile 2 e Biologia.</p>
 
-<br>
-
 ## 👨‍💻 Tecnologias utilizadas
 
 <div align="left">
